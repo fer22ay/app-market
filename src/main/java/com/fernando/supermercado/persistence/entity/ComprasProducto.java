@@ -6,7 +6,8 @@ import javax.persistence.*;
 import java.io.Serializable;
 
 /**
- * Clase que representa la tabla compras_productos de la base de datos.
+ * Clase que representa la tabla compras_productos de la base de datos. Donde se almacenara
+ * los detalles de los productos.
  *
  * @author Fernando
  * @since 06/10/2020
@@ -15,6 +16,8 @@ import java.io.Serializable;
 @Entity
 @Table(name = "compras_productos", schema = "market")
 public class ComprasProducto implements Serializable {
+
+    private static final long serialVersionUID = 99508871893973958L;
 
     @EmbeddedId
     private ComprasProductoPK id;

@@ -7,13 +7,16 @@ import javax.persistence.Embeddable;
 import java.io.Serializable;
 
 /**
- * Clase que representa una llave compuesta de la base de datos.
+ * Clase que representa la llave compuesta entre compras y compras_prdocutos.
+ *
  * @author Fernando
  * @since 06/10/2020
  */
 @Data
 @Embeddable
 public class ComprasProductoPK implements Serializable {
+
+    private static final long serialVersionUID = -4966101256653168649L;
 
     @Column(name = "id_compra")
     private Long idCompra;

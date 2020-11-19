@@ -6,6 +6,7 @@ import io.jsonwebtoken.SignatureAlgorithm;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.stereotype.Component;
 
+import java.io.Serializable;
 import java.util.Date;
 
 /**
@@ -15,12 +16,13 @@ import java.util.Date;
  * @since 10/10/2020
  */
 @Component
-public class JWTUtil {
+public class JWTUtil implements Serializable {
 
     /**
      * Constante para firmar nuestro Json web token
      */
     private static final String KEY = "pl4tz1";
+    private static final long serialVersionUID = 6354355579537774792L;
 
     public String generateToken(UserDetails userDetails){
 

@@ -7,6 +7,8 @@ import java.io.Serializable;
 import java.util.List;
 
 /**
+ * Clase que representa las categorias de los productos
+ *
  * @author Fernando
  * @since 05/10/2020
  */
@@ -14,6 +16,8 @@ import java.util.List;
 @Entity
 @Table(name = "categorias", schema = "market")
 public class Categoria implements Serializable {
+
+    private static final long serialVersionUID = -6036814456901274167L;
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

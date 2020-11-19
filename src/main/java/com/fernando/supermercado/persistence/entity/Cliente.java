@@ -7,6 +7,8 @@ import java.io.Serializable;
 import java.util.List;
 
 /**
+ * Clase que representa la tabla clientes de la base de datos.
+ *
  * @author Fernando
  * @since 06/10/2020
  */
@@ -14,6 +16,8 @@ import java.util.List;
 @Entity
 @Table(name = "clientes", schema = "market")
 public class Cliente implements Serializable {
+
+    private static final long serialVersionUID = -4922314092723783337L;
 
     @Id
     @Column(name = "id")

@@ -8,6 +8,8 @@ import java.time.LocalDateTime;
 import java.util.List;
 
 /**
+ * Clase que tendra los registros de las compras de los clients.
+ *
  * @author Fernando
  * @since 06/10/2020
  */
@@ -15,6 +17,8 @@ import java.util.List;
 @Entity
 @Table(name = "compras", schema = "market")
 public class Compra implements Serializable {
+
+    private static final long serialVersionUID = -6459347932797276798L;
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

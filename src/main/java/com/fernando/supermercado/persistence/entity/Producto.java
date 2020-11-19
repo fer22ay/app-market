@@ -6,6 +6,8 @@ import javax.persistence.*;
 import java.io.Serializable;
 
 /**
+ * Clase donde se almacenara los productos de la aplicación.
+ *
  * @author Fernando Ambrosio
  * @since 05/10/2020
  */
@@ -13,6 +15,8 @@ import java.io.Serializable;
 @Entity
 @Table(name = "productos", schema = "market")
 public class Producto implements Serializable {
+
+    private static final long serialVersionUID = 5262828724794813574L;
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
